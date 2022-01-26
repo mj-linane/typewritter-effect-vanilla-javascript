@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400&family=Roboto:wght@100;300;400&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  height: 100vh;
+  background: rgba(2, 2, 2);
+  color: #ccc;
+  overflow: hidden;
+}
+
+h1 h2 {
+  font-weight: 200;
+  margin: 0.4rem;
+}
+
+h1 {
+  font-family: 'Roboto', 'sans-serif';
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #aaa;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding: 0 3rem;
+}
+
+.typed-text {
+  color: red;
+}
+
+/*Cursor*/
+.cursor {
+  display: inline-block;
+  width: 3px;
+  background-color: #aaa;
+  margin-left: 0.1rem;
+  animation: blinkTextCursor 1s infinite;
+}
+
+.cursor.typing {
+  animation: none;
+}
+
+@keyframes blinkTextCursor {
+  0% {
+    background-color: #aaa;
+  }
+  49% {
+    background-color: #aaa;
+  }
+  50% {
+    background-color: transparent;
+  }
+  99% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: #aaa;
+  }
+}
+
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+}
